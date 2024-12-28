@@ -10,7 +10,7 @@ const createTour = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'Tour is created Successfully',
     data: result,
   })
 })
@@ -20,7 +20,7 @@ const getTours = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'All Tour retrived Successfully',
     data: result,
   })
 })
@@ -31,7 +31,7 @@ const getSingleTour = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'Single Tour Retrived Successfully',
     data: result,
   })
 })
@@ -43,7 +43,7 @@ const updateTour = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'Tour is updated Successfully',
     data: result,
   })
 })
@@ -53,7 +53,7 @@ const deleteTour = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'Tour is deleted Successfully',
     data: result,
   })
 })
@@ -63,7 +63,7 @@ const getNextSchedule = catchAsync(async (req: Request, res: Response) => {
   sendResponse(res, {
     statusCode: httpStatus.CREATED,
     success: true,
-    message: 'User is created Successfully',
+    message: 'Get Next Schedule Successfully',
     data: result,
   })
 })

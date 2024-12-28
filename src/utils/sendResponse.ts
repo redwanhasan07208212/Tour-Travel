@@ -4,7 +4,7 @@ type TData<T> = {
   statusCode: number
   success: boolean
   message: string
-  data?: T
+  data?: T | T[] | null
 }
 const sendResponse = <T>(res: Response, data: TData<T>) => {
   res.status(data?.statusCode).json({

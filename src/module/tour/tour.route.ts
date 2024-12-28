@@ -1,13 +1,13 @@
-import { Router } from 'express'
+import express from 'express'
 import { tourController } from './tour.controller'
 
-const tourRouter = Router()
+const router = express.Router()
 
-tourRouter.get('/schedule/:id', tourController.getNextSchedule)
-tourRouter.get('/:id', tourController.getSingleTour)
-tourRouter.get('/', tourController.getTours)
-tourRouter.post('/', tourController.createTour)
-tourRouter.put('/:id', tourController.updateTour)
-tourRouter.delete('/:id', tourController.deleteTour)
+router.get('/schedule/:id', tourController.getNextSchedule)
+router.get('/:id', tourController.getSingleTour)
+router.get('/', tourController.getTours)
+router.post('/create-tour', tourController.createTour)
+router.put('/:id', tourController.updateTour)
+router.delete('/:id', tourController.deleteTour)
 
-export default tourRouter
+export const tourRouter = router
