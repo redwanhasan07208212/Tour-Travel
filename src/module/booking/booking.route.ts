@@ -1,4 +1,5 @@
-import  express  from 'express';
+import express from 'express'
+import { bookingController } from './booking.controller'
 // create Booking
 // get All Booking
 // get Booking by id
@@ -6,5 +7,5 @@ import  express  from 'express';
 // update Booking
 // delete Booking = soft delete
 
-const router = express.Router();
-router.post('')
+const router = express.Router()
+router.post('/create-booking', bookingController.createBooking)
