@@ -9,3 +9,5 @@ import { bookingController } from './booking.controller'
 
 const router = express.Router()
 router.post('/create-booking', bookingController.createBooking)
+router.patch('/:id', bookingController.updateBooking)
+export const bookingRouter = router

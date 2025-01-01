@@ -22,7 +22,6 @@ const bookingSchema = new Schema<Tbooking>(
     },
     totalPrice: {
       type: Number,
-      required: true,
     },
   },
   {
